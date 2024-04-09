@@ -1,0 +1,84 @@
+.addStaff{
+  padding: 25px 25px 10px 25px;
+  background-color: red;
+  background-color: #fff;
+  box-shadow: 1px 1px 5px 1px #AAA,0px 1px 2px 0px #aaa;
+  border-radius: 4px;
+  .head{
+    font-weight: bold;
+    color: var(--black);
+    padding: 10px;
+  }
+  .content{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    .top{
+      display: flex;
+      gap: .5rem;
+      flex-wrap: wrap;
+      .inputBox{
+        padding: 10px;
+        background-color: #eee;
+        border-radius: 4px;
+        flex :1 0 120px;
+        display: flex;
+        flex-wrap: nowrap;
+        .restrict{
+          cursor: not-allowed;
+        }
+        input{
+          padding: 5px;
+          font-size: 15px;
+          background:transparent;
+          border-bottom: 1px solid #aaa;
+          color: #454444;
+          min-width: 220px;
+          width:100%;
+          font-weight: bold;
+        }
+        label{
+          white-space: nowrap;
+        }
+      }
+    }
+    .down{
+      width: 100%;
+      display: flex;
+      justify-content:flex-start;
+      padding: 10px;
+      align-items: center;
+      .submitBox{
+        padding: 10px;
+        display: flex;
+        gap:1rem;
+        input{
+          padding: 10px 15px;
+          font-size: 15px;
+          color:#000;
+          min-width: 120px;
+          background-color: #fff;
+          box-shadow: 1px 1px 5px 1px #AAA,0px 1px 2px 0px #aaa;
+          border-radius: 6px;
+          cursor: pointer;
+        }
+        input:hover{
+          background-color: var(--black);
+          color: #fff;
+        }
+      }
+      .statusBox{
+        padding: 10px;
+        font-weight: bold;
+        display: flex;
+        .errorBox{
+          color:red;
+        }
+        .successBox{
+          color: green;
+        }
+      }
+    }
+  }
+}

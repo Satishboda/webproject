@@ -1,0 +1,29 @@
+.wrongBar .wrl,
+.wrongBar .wrr {
+  transition: 0.2 ease-in-out;
+}
+@media only screen and (max-width:400px){
+  .wrongBar:hover .wrl,
+  .wrongBar:hover .wrr{
+    background-color:#fff;
+  }
+  .wrongBar{
+    width:20px;
+    padding:5px;
+    height: 20px;
+  }
+  .wrongBar .wrl{
+    padding: .09rem;
+    background: #afafaf;
+    border-radius: 10px;
+    transition: .2 ease-in-out;
+    transform: rotate(45deg) translateY(8px) translateX(6px);
+  }
+  .wrongBar .wrr{
+    padding: .09rem;
+    background: #afafaf;
+    border-radius: 10px;
+    transition: .2 ease-in-out;
+    transform: rotate(-45deg) translateY(4px) translateX(-6px);
+  }
+}

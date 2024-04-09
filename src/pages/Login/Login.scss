@@ -1,0 +1,84 @@
+.login-page{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  color:var(--black);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  .loginBox{
+    padding: 20px;
+    background-color:transparent;
+    display:flex;
+    box-shadow: 1px 1px 5px 1px #AAA,0px 1px 2px 0px #aaa;
+    flex-direction: column;
+    backdrop-filter:blur(5px);
+    gap:.5rem;
+    min-width: 300px;
+    min-height: 280px;
+    border-radius: 6px;
+    transform: translateY(30%);
+    h2{
+      margin: 5px;
+    }
+    .inputs{
+      position: relative;
+      padding:10px 5px 5px 5px;
+      margin: 10px 5px 10px 0px;
+      min-height: 30px;
+      align-items: center;
+      flex-direction: column;
+      border-bottom: 1px solid var(--black);
+      .input{
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+      }
+      label{
+        text-align: left;
+        transition: .3s ease-in-out;
+        position: absolute;
+      }
+      .fadeup{
+        transform: translateY(-20px); 
+      }
+      .fadedown{
+        transform: translateY(6px); 
+      }
+    }
+    .forgot-pass{
+      padding: 10px;
+    }
+    input{
+      padding:5px;
+      transform: translateY(5px);
+      font-size: 18px;
+      background:transparent;
+      z-index:2;
+    }
+    .success{
+      color:green;
+    }
+    .failure{
+      color:red;
+    }
+    .submit{
+      margin-top: 10px;
+      input{
+        background-color: var(--black);
+        color:#fff;
+        box-shadow: 1px 1px 15px 1px #AAA,0px 1px 2px 0px #aaa;
+        width:100%;
+        border-radius: 4px;
+        padding: 8px;
+        cursor: pointer;
+      }
+      input:hover{
+        background-color:var(--white);
+        color:var(--black);
+      }
+      .submitted{
+        background-color:var(--white);
+        color:var(--black);
+      }
+    }
+  }
+}

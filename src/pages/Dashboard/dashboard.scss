@@ -1,0 +1,53 @@
+.dashboard{
+  padding: 10px 10px 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap:1rem;
+  min-height: 80vh;
+  .sidebar{
+    position: sticky;
+    top:100px;
+    height: max-content;
+    margin-top: 10px;
+    flex:1 0 120px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-width: 200px;
+    .option-head{
+      padding: 10px;
+      color:#3b3b3d;
+      .value{
+        font-weight: bold;
+      }
+    }
+    .options{
+      list-style: none;
+      padding: 10px 0px;
+      display: flex;
+      flex-direction: column;
+      li{
+        padding: 10px;
+        cursor: pointer;
+      }
+      .active{
+        color:#272729;
+        font-weight: 600;
+        background-color: #efe1fe;
+
+      }
+      li:hover{
+        background-color: #efe1fe;
+
+      }
+    }
+
+  }
+  .content{
+    flex:1 0 70%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

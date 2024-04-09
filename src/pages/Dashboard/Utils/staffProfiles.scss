@@ -1,0 +1,112 @@
+.allProfiles{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+  padding: 10px;
+  gap: 1rem;
+  .staffProfiles{
+    padding: 10px;
+    background-color: #fff;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    width: 100%;
+    box-shadow: 1px 1px 5px 1px #AAA,0px 1px 2px 0px #aaa;
+    .box{
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      flex:1 0 120px;
+      gap: .5rem;
+      .value{
+        font-weight: bold;
+        color:#59595a;
+      }
+      .bg{
+        background-color: #eee;
+        border-radius: 4px;
+        padding: 2px 5px;
+        width: max-content;
+        align-items: center;
+        color:#59595a;
+        font-weight: bold;
+      }
+      .incomplete{
+        font-weight: bold;
+        color:orangered;
+      }
+      .completed{
+        font-weight: bold;
+        color: green;
+      }
+    }
+  
+    .left{
+      span{
+        color: #59595a;
+        font-weight: 600;
+      }
+  
+  
+    }
+    .middle{
+      text-align: center;
+  
+    }
+    .right{
+      text-align: right;
+      .active{
+        display: flex;
+        justify-content: flex-end;
+        width: max-content;
+        gap: 1rem;
+        .status{
+          white-space: nowrap;
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 5px 12px;
+          min-width: 80px;
+          max-width: 100px;
+          border-radius: 4px;
+          color: #000;
+          box-shadow: 1px 1px 5px 1px #AAA,0px 1px 2px 0px #aaa;
+          background-color: #fff;
+        }
+        .restrict{
+          cursor:not-allowed;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 5px 8px;
+          min-width: 80px;
+          max-width: 100px;
+          border-radius: 4px;
+          color: #000;
+          box-shadow: 1px 1px 5px 1px #AAA,0px 1px 2px 0px #aaa;
+          background-color: #fff;
+
+        }
+        .status:hover{
+          background-color: var(--black);
+          color: #fff;
+        }
+      }
+      .icon{
+        cursor: pointer;
+        color: rgb(33, 33, 240);
+      }
+      .icon:hover{
+        scale: 1.2 1.2;
+      }
+      .delete{
+        color: red;
+        font-size: 25px;
+      }
+  
+    }
+  }
+  
+}
